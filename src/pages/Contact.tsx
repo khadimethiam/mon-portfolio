@@ -334,7 +334,7 @@ const Contact = () => {
 
               <div className="relative h-80 rounded-lg overflow-hidden border border-primary/30">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83998.76457410133!2d2.2769948739278364!3d48.85894658138325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1f06e2b70f%3A0x40b82c3688c9460!2sParis%2C%20France!5e0!3m2!1sfr!2sfr!4v1647952613129!5m2!1sfr!2sfr"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4259.253798946083!2d-17.272993!3d14.715517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec1724a28e9d7d7%3A0x87f636344d763ebc!2sRufisque%2C%20S%C3%A9n%C3%A9gal!5e0!3m2!1sfr!2sfr!4v1710762345678!5m2!1sfr!2sfr"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}

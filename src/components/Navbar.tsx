@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Menu, X, Cpu } from "lucide-react";
@@ -62,7 +62,7 @@ const Navbar: React.FC<NavbarProps> = () => {
           <Link to="/" className="flex items-center space-x-2">
             <Cpu className="text-primary h-8 w-8" />
             <span className="font-cyber text-xl text-white neon-text">
-              DEV<span className="text-primary">MATRIX</span>
+              BAMBA<span className="text-primary">DEV</span>
             </span>
           </Link>
 

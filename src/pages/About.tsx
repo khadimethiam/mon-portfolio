@@ -82,7 +82,7 @@ const About = () => {
               <div className="flex flex-col md:flex-row items-center mb-8">
                 <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-primary mb-6 md:mb-0 md:mr-8 relative">
                   <img
-                    src="public/images/Mon_profil_Portfolio.jpeg"
+                    src="Mon_profil_Portfolio.jpeg"
                     alt="Portrait du développeur"
                     className="w-full h-full object-cover"
                   />
