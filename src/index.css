@@ -1,0 +1,125 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #8A2BE2;
+  --secondary: #FF00FF;
+  --neon-green: #39FF14;
+  --neon-blue: #00FFFF;
+  --neon-pink: #FF10F0;
+  --dark: #0F0F0F;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--dark);
+  color: white;
+  overflow-x: hidden;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1A1A1A;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary);
+}
+
+/* Custom classes */
+@layer components {
+  .neon-border {
+    @apply relative border border-transparent;
+  }
+  
+  .neon-border::before {
+    content: '';
+    @apply absolute inset-0 rounded-md;
+    background: linear-gradient(45deg, var(--primary), var(--secondary), var(--neon-blue), var(--neon-pink));
+    z-index: -1;
+    animation: border-glow 3s linear infinite;
+  }
+  
+  .neon-text {
+    @apply font-cyber;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px var(--primary), 0 0 20px var(--primary);
+  }
+  
+  .glitch-effect {
+    @apply relative;
+  }
+  
+  .glitch-effect::before,
+  .glitch-effect::after {
+    content: attr(data-text);
+    @apply absolute top-0 left-0 w-full h-full;
+  }
+  
+  .glitch-effect::before {
+    @apply text-neon-blue;
+    animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+    animation-delay: 0.1s;
+  }
+  
+  .glitch-effect::after {
+    @apply text-neon-pink;
+    animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite;
+    animation-delay: 0.2s;
+  }
+  
+  .matrix-bg {
+    @apply fixed top-0 left-0 w-full h-full opacity-10 pointer-events-none z-[-1];
+  }
+  
+  .btn-cyber {
+    @apply relative px-6 py-2 font-cyber text-white bg-transparent border border-primary overflow-hidden transition-all duration-300;
+  }
+  
+  .btn-cyber::before {
+    content: '';
+    @apply absolute inset-0 bg-primary opacity-50 transform scale-x-0 origin-left transition-transform duration-300;
+  }
+  
+  .btn-cyber:hover::before {
+    @apply transform scale-x-100;
+  }
+  
+  .btn-cyber:hover {
+    @apply shadow-[0_0_10px_rgba(138,43,226,0.7)];
+  }
+  
+  .card-cyber {
+    @apply relative bg-dark-lighter rounded-md overflow-hidden border border-primary/30 transition-all duration-300;
+  }
+  
+  .card-cyber:hover {
+    @apply border-primary shadow-[0_0_15px_rgba(138,43,226,0.5)];
+  }
+  
+  .card-cyber::before {
+    content: '';
+    @apply absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary via-neon-blue to-secondary;
+  }
+}
+
+@keyframes border-glow {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
