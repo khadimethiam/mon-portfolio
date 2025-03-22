@@ -119,8 +119,7 @@ const Projects = () => {
         title: "Portfolio Cyberpunk",
         description:
           "Portfolio de développeur avec thème cyberpunk et animations futuristes. Présentation interactive des projets et compétences avec effets visuels immersifs.",
-        image:
-          "https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+        image: "/public/CyberPunk.jpg",
         tags: ["React", "Framer Motion", "GSAP", "Tailwind CSS", "TypeScript"],
         github: "https://github.com",
         demo: "https://example.com",

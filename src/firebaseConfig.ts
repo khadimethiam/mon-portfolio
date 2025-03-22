@@ -2,16 +2,16 @@ import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyD6VaW0OPKLSyUEu0wKaHZLbjAQdvPbRxk",
-  authDomain: "monportfolio-811e9.firebaseapp.com",
-  projectId: "monportfolio-811e9",
-  storageBucket: "monportfolio-811e9.firebasestorage.app",
-  messagingSenderId: "1066138001793",
-  appId: "1:1066138001793:web:3aa75b724c6c40f2944880",
+  apiKey: "AIzaSyBlNSZ8byoHatyZou2ELCl32mmynXwburM",
+  authDomain: "khadime-mbacke-thiam.firebaseapp.com",
+  projectId: "khadime-mbacke-thiam",
+  storageBucket: "khadime-mbacke-thiam.appspot.com",
+  messagingSenderId: "1024911359558",
+  appId: "1:1024911359558:web:ee65c971c05d3c2d4f9447",
 };
 
 // Initialiser Firebase
 const app = initializeApp(firebaseConfig);
-const db = getFirestore(app);
+const db = getFirestore(app); // Initialiser Firestore
 
 export { db };
